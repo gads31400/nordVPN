@@ -7,8 +7,9 @@ install: nordVPN.sh nordVPN.png nordVPN.desktop list_serv.txt  ## Copie les fich
 	cp -f ./nordVPN.desktop /usr/share/applications/nordVPN.desktop
 	mkdir ~/.config/nordVPN
 	cp -f ./list_serv.txt ~/.config/nordVPN/list_serv.txt
-
-
+	wget https://downloads.nordcdn.com/configs/archives/servers/ovpn.zip -P /etc/openvpn/
+	sudo unzip /etc/openvpn/ovpn.zip
+	sudo /etc/openvpn/ovpn.zip
 
 uninstall:  ## supprime les fichiers nordVPN.sh nordVPN.png nordVPN.desktop list_serv.txt
 	rm /usr/bin/nordVPN.sh
