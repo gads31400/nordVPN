@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Categories=Network;
+Comment=VPN de nordVPN
+Icon=/usr/share/pixmaps/nordVPN.png
+Name=NordVPN
+Terminal=false
+Exec=sh /bin/nordVPN.sh
+Hidden=false
